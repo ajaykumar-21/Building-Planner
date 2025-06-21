@@ -20,7 +20,7 @@ This is a web-based building planner tool built using **React** and **Tailwind C
 
 | Draw Tools | Select Tool | Annotation Toggle |
 |------------|-------------|-------------------|
-| (assets/Screenshot%202025-06-21%20223931.png)
+| ![Draw Tools](src/assets/draw-tools.png)
 
 ---
 
