@@ -1,12 +1,59 @@
-# React + Vite
+# 🏗️ Building Planner - L2 Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a web-based building planner tool built using **React** and **Tailwind CSS**. It allows users to draw basic shapes like lines, rectangles, and circles on a canvas. Users can annotate shapes with dimensions, select and move them using a select tool, and toggle annotation visibility.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ✏️ **Draw Tools**: Line, Rectangle, Circle
+- 🖱️ **Select Tool**: Click to select, drag to move shapes
+- 📏 **Annotations**: Length, width, radius (toggle on/off)
+- 💡 Clean and minimal interface
+- 🎯 Responsive and easy to use
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📸 Screenshots
+
+> Add your own screenshots in the `screenshots/` folder and link them here:
+
+| Draw Tools | Select Tool | Annotation Toggle |
+|------------|-------------|-------------------|
+| (assets/Screenshot%202025-06-21%20223931.png)
+
+---
+
+## 🧰 Tech Stack
+
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vite](https://vitejs.dev/) (for fast builds)
+
+---
+
+## 🛠️ Setup & Run Locally
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/building-planner.git
+cd building-planner
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the development server
+npm run dev
+
+# 4. Open in browser
+# Visit http://localhost:5173
+
+
+## Project Structure
+src/
+├── components/
+│   ├── DrawingCanvas.jsx
+│   └── Toolbar.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
