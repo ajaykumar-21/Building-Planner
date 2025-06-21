@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Toolbar from "./components/Toolbar";
-import "./App.css";
+import DrawingCanvas from "./components/DrawingCanvas";
 
 function App() {
   const [tool, setTool] = useState("select");
@@ -21,6 +21,10 @@ function App() {
             toggleAnnotations={() => setShowAnnotations((prev) => !prev)}
             showAnnotations={showAnnotations}
           />
+        </div>
+        {/* Drawing Area */}
+        <div className="flex-1">
+          <DrawingCanvas tool={tool} showAnnotations={showAnnotations} />
         </div>
       </div>
     </div>
