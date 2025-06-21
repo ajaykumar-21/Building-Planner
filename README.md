@@ -9,6 +9,7 @@ This is a web-based building planner tool built using **React** and **Tailwind C
 - ✏️ **Draw Tools**: Line, Rectangle, Circle
 - 🖱️ **Select Tool**: Click to select, drag to move shapes
 - 📏 **Annotations**: Length, width, radius (toggle on/off)
+- 🗑️ Delete shapes using `Delete` or `Backspace` key when selected
 - 💡 Clean and minimal interface
 - 🎯 Responsive and easy to use
 
@@ -19,7 +20,8 @@ This is a web-based building planner tool built using **React** and **Tailwind C
 > Add your own screenshots in the `screenshots/` folder and link them here:
 
 | Draw Tools | Select Tool | Annotation Toggle |
-|------------|-------------|-------------------|
+| ---------- | ----------- | ----------------- |
+
 | ![Draw Tools](src/assets/draw-tools.png)
 
 ---
@@ -57,3 +59,4 @@ src/
 ├── App.jsx
 ├── main.jsx
 └── index.css
+```

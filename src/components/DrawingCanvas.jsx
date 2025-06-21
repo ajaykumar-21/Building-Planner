@@ -12,6 +12,22 @@ export default function DrawingCanvas({ tool, showAnnotations }) {
     redraw();
   }, [shapes, currentShape, showAnnotations, selectedShapeIndex]);
 
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (tool === "select" && selectedShapeIndex !== null) {
+        if (e.key === "Delete" || e.key === "Backspace") {
+          const updated = [...shapes];
+          updated.splice(selectedShapeIndex, 1); // remove selected
+          setShapes(updated);
+          setSelectedShapeIndex(null);
+        }
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [tool, selectedShapeIndex, shapes]);
+
   const getMousePos = (e) => {
     const rect = canvasRef.current.getBoundingClientRect();
     return {
